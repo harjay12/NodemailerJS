@@ -1,0 +1,53 @@
+.formWapper {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+  height: auto;
+  background-color: aqua;
+  text-align: center;
+}
+
+input {
+  margin: 5px;
+  height: 20px;
+  width: 250px;
+  border: none;
+  border-bottom: solid 1px blue;
+  border-radius: 5px;
+}
+label {
+  display: block;
+  margin: 2px3px;
+}
+
+.btn {
+  background-color: rgb(9, 83, 61);
+  height: 25px;
+  width: 100px;
+  color: white;
+  font: italic;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+textarea {
+  margin: 10px;
+  height: 70px;
+  width: 250px;
+  border: none;
+  border-bottom: solid 1px blue;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+.style {
+  padding-top: 15px;
+}
