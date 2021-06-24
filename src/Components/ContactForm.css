@@ -15,6 +15,7 @@ input {
   border: none;
   border-bottom: solid 1px blue;
   border-radius: 5px;
+  outline: none;
 }
 label {
   display: block;
@@ -41,6 +42,7 @@ textarea {
   border: none;
   border-bottom: solid 1px blue;
   border-radius: 5px;
+  outline: none;
 }
 
 .btn:hover {
@@ -50,4 +52,53 @@ textarea {
 
 .style {
   padding-top: 15px;
+}
+.sentmsg1 {
+  color: green;
+}
+.sentmsg2 {
+  color: red;
+}
+
+.dot-pulse {
+  position: relative;
+  left: -9999px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #9880ff;
+  color: #9880ff;
+  box-shadow: 9999px 0 0 -5px #9880ff;
+  animation: dotPulse 1.5s infinite linear;
+  animation-delay: 0.25s;
+}
+
+.appendMovingDots:after {
+  content: " .";
+  animation: dots 3s steps(1, end) infinite;
+}
+@keyframes dots {
+  0%,
+  12.5% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  37.5% {
+    text-shadow: 0.5em 0;
+  }
+  50% {
+    text-shadow: 0.5em 0, 1em 0;
+  }
+  62.5% {
+    text-shadow: 0.5em 0, 1em 0, 1.5em 0;
+  }
+  75% {
+    text-shadow: 0.5em 0, 1em 0, 1.5em 0, 2em 0;
+  }
+  87.5%,
+  100% {
+    text-shadow: 0.5em 0, 1em 0, 1.5em 0, 2em 0, 2.5em;
+  }
 }
